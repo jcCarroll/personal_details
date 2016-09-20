@@ -1,4 +1,5 @@
 require 'sinatra'
+require_relative 'addition.rb'
 
 get '/' do 
 	erb :get_name
@@ -32,5 +33,7 @@ post '/threenums' do
 	num1 = params[:user_threenums1]
 	num2 = params[:user_threenums2]
 	num3 = params[:user_threenums3]
-	"So, #{name}, you are #{age} and your 3 favorite numbers are #{num1}, #{num2}, and #{num3}."
+	addnum = add(num1.to_i, num2.to_i, num3.to_i)
+
+	"So, #{name}, you are #{age} and your 3 favorite numbers are #{num1}, #{num2}, and #{num3} which add up to #{addnum}."
 end

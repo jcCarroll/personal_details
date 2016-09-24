@@ -1,0 +1,10 @@
+Congrats <%= name%> on surviving until <%= age%>. What are your 3 favorite numbers?
+
+<form method = "post" action = "threenums">
+	<input type = "number" name = "user_threenums1">
+	<input type = "number" name = "user_threenums2">
+	<input type = "number" name = "user_threenums3">
+	<input type = "submit">
+	<input type="text" name="user_name" value = <%= name %> hidden>
+	<input type="text" name="user_age" value = <%= age %> hidden>
+</form>

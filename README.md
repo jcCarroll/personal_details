@@ -1,4 +1,5 @@
-This was an exercise in creating a web app.
+# Personal Details App
+This was my first exercise in creating a web app.
 
 It is an app that asks you for some basic information (name, age, height, and 3 favorite numbers) over a series of pages and then returns that information back to you.
 
